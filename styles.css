@@ -171,6 +171,23 @@ a {
   border-radius: 3px;
 }
 
+@media all and (max-width: 337px) {
+  .logo {
+    font-size: 17px;
+    padding: 4.5px 10px 7.5px 65px;
+   }
+
+   .flag {
+    width: 72px;
+    height: 49px;
+   }
+
+   .panama__star {
+    width: 16px;
+   }
+
+}
+
 /* Tablet menu */
 @media all and (min-width: 700px) {
     .menu {
