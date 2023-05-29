@@ -18,7 +18,12 @@ nav {
 
 .definition {
   background: white;
-  color: gray;
+  color: rgb(56, 53, 53);
+  display: flex;
+  flex-direction: column;
+  padding:4px;
+  align-items: flex-start;
+  gap: 3px;
 }
 
 a {
