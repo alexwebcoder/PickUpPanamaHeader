@@ -23,7 +23,12 @@ nav {
   flex-direction: column;
   padding:4px;
   align-items: flex-start;
-  gap: 3px;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.definition span {
+  letter-spacing: .009rem;
 }
 
 a {
@@ -58,8 +63,8 @@ a {
 
 .flag {
   position: absolute;
-  width: 98px;
-  height: 69px;
+  width: 90px;
+  height: 61px;
   overflow: hidden;
   top: 0;
   left: 0;
