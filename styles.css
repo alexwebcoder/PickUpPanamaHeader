@@ -17,18 +17,19 @@ nav {
 }
 
 .definition {
-  background: white;
-  color: rgb(56, 53, 53);
+  background: #132257;
+  color: #FFF;
   display: flex;
   flex-direction: column;
-  padding:4px;
+  padding: 4px 6px 4px;
   align-items: flex-start;
-  gap: 4px;
-  font-size: 12px;
+  gap: 6px;
+  font-size: 13px;
+  letter-spacing: .09rem;
 }
 
 .definition span {
-  letter-spacing: .009rem;
+  letter-spacing: .03rem;
 }
 
 a {
@@ -66,8 +67,8 @@ a {
   width: 90px;
   height: 61px;
   overflow: hidden;
-  top: 0;
-  left: 0;
+  top: 5px;
+  left: 5px;
   border: .15rem solid #1e252c;
 }
 
@@ -117,7 +118,7 @@ a {
 
 .menu li a {
   display: block;
-  padding: 15px 5px;
+  padding: 5px 5px;
   white-space: nowrap;
   font-weight: 600;
   letter-spacing: .0rem;
@@ -200,6 +201,13 @@ a {
    .panama__star {
     width: 16px;
    }
+
+}
+
+@media all and (max-width: 285px) {
+ nav {
+  padding-right: 0;
+ }
 
 }
 
