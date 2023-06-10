@@ -11,9 +11,14 @@ body {
     background-color: #ccc;
 }
 
+.content {
+  height: 100vh;
+}
+
 nav {
     background: #FFF;
     padding: 0 15px;
+    height: 70px;
 }
 
 .definition {
@@ -21,15 +26,15 @@ nav {
   color: #FFF;
   display: flex;
   flex-direction: column;
-  padding: 4px 6px 4px;
+  padding: 4px 0 4px 10px;
   align-items: flex-start;
   gap: 6px;
-  font-size: 13px;
+  font-size: 12px;
   letter-spacing: .09rem;
 }
 
 .definition span {
-  letter-spacing: .03rem;
+  letter-spacing: .037rem;
 }
 
 a {
@@ -43,8 +48,8 @@ a {
 }
 
 .logo {
-    font-size: 20px;
-    padding: 7.5px 10px 7.5px 85px;
+    font-size: 22px;
+    padding: 4.5px 10px 4.5px 77px;
 }
 
 .item {
@@ -64,11 +69,11 @@ a {
 
 .flag {
   position: absolute;
-  width: 90px;
-  height: 61px;
+  width: 79px;
+  height: 50px;
   overflow: hidden;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
   border: .15rem solid #1e252c;
 }
 
@@ -84,7 +89,7 @@ a {
 }
 
 .panama__star {
-  width: 23px;
+  width: 19px;
   aspect-ratio: 1;
   /* background-color: white; */
   clip-path: polygon(
@@ -187,7 +192,7 @@ a {
   border-radius: 3px;
 }
 
-@media all and (max-width: 337px) {
+/* @media all and (max-width: 337px) {
   .logo {
     font-size: 17px;
     padding: 4.5px 10px 7.5px 65px;
@@ -202,7 +207,7 @@ a {
     width: 16px;
    }
 
-}
+} */
 
 @media all and (max-width: 285px) {
  nav {
