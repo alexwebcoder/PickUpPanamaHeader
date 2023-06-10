@@ -8,16 +8,23 @@
 body {
     font-family: sans-serif;
     font-size: 16px;
-    background-color: #ccc;
+    /* background-color: #ccc; */
 }
 
 .content {
   height: 100vh;
-  margin-top: 200px;
+  margin-top: 100px;
+}
+
+.content img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: auto;
 }
 
 nav {
-    background: #FFF;
+    /* background: #FFF; */
     padding: 0 15px;
     height: 70px;
 }
@@ -25,11 +32,11 @@ nav {
 .definition {
   background: #132257;
   color: #FFF;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   padding: 4px 0 4px 10px;
-  align-items: flex-start;
-  gap: 6px;
+  /* align-items: flex-start; */
+  /* gap: 6px; */
   font-size: 12px;
   letter-spacing: .09rem;
 }
@@ -76,13 +83,12 @@ a {
   left: 0;
   z-index: 1;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .progress-container {
   width: 100%;
-  height: 8px;
-  background: #cccccc;
+  height: 4px;
 }
 
 .progress-bar {
@@ -97,15 +103,18 @@ a {
 .header.is-sticky {
   position: fixed;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
-  padding: 8px 0;
+  padding: 0;
   backdrop-filter: blur(10px);
   animation: slideDown 0.35s ease-out;
 }
 
-.page-header.header.is-sticky .logo, .page-header.header.is-sticky .flag {
-  max-width: 80%;
-  font-size: 14px;
-  padding: 7px 10px;
+.header.header.is-sticky .logo {
+  font-size: 18px;
+}
+
+.header.header.is-sticky .flag {
+  width: 74px;
+  height: 45px
 }
 
 @keyframes slideDown {
