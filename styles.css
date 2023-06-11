@@ -110,11 +110,20 @@ a {
 
 .header.header.is-sticky .logo {
   font-size: 18px;
+  padding-top: 6.5px;
 }
 
 .header.header.is-sticky .flag {
   width: 74px;
   height: 45px
+}
+
+.header.header.is-sticky .panama__star {
+  width: 16px;
+}
+
+.header.header.header.is-sticky nav {
+  height: 65px;
 }
 
 @keyframes slideDown {
