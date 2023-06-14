@@ -8,7 +8,6 @@
 body {
     font-family: sans-serif;
     font-size: 16px;
-    /* background-color: #ccc; */
 }
 
 .content {
@@ -24,19 +23,13 @@ body {
 }
 
 nav {
-    /* background: #FFF; */
-    padding: 0 15px;
     height: 70px;
 }
 
 .definition {
   background: #132257;
   color: #FFF;
-  /* display: flex; */
-  /* flex-direction: column; */
   padding: 4px 0 4px 10px;
-  /* align-items: flex-start; */
-  /* gap: 6px; */
   font-size: 12px;
   letter-spacing: .09rem;
 }
@@ -50,14 +43,13 @@ a {
     text-decoration: none;
 }
 
-.menu,
-.submenu {   
+.menu {   
     list-style-type: none;
 }
 
 .logo {
     font-size: 22px;
-    padding: 4.5px 10px 4.5px 77px;
+    padding: 4.5px 10px 4.5px 91px;
     transition: background 0.3s;
 }
 
@@ -102,9 +94,8 @@ a {
 
 .header.is-sticky {
   position: fixed;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
   padding: 0;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   animation: slideDown 0.35s ease-out;
 }
 
@@ -115,7 +106,7 @@ a {
 
 .header.header.is-sticky .flag {
   width: 74px;
-  height: 45px
+  height: 47px
 }
 
 .header.header.is-sticky .panama__star {
@@ -140,7 +131,7 @@ a {
 .flag {
   position: absolute;
   width: 79px;
-  height: 50px;
+  height: 52px;
   overflow: hidden;
   top: 10px;
   left: 10px;
@@ -192,6 +183,29 @@ a {
   align-items: center;
 }
 
+/* .menu.active {
+  background-color: #ffffff;
+} */
+
+.menu.active + .menuBg {
+  content: '';
+  display: block;
+  height: 192px;
+  position: absolute;
+  top: 92px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: tan;
+  z-index: -1;
+}
+
+.header.is-sticky .menu.active + .menuBg {
+  top: 91px;
+}
+
+
+
 .menu li a {
   display: block;
   padding: 5px 5px;
@@ -224,44 +238,14 @@ a {
 
 .active .item {
   display: block;
+  position: relative;
+  top: 21px;
 }
 
 .button.secondary { /* divider between buttons and menu links*/
   border-bottom: 1px #444 solid;
 }
 
-/*Submenu up from mobile screens*/
-
-.submenu {
- display: none;
-}
-
-.submenu-active .submenu {
-  display: block;
-}
-
-.has-submenu i {
-  font-size: 12px;
-}
-
-.has-submenu > a::after {
-  font-family: "Font Awesome 5 Free";
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 900;
-  content: "\f078";
-  color: #FFF;
-  padding-left: 5px;
-}
-
-.subitem a {
-  padding: 10px 15px;
-}
-
-.submenu-active {
-  background-color: #111;
-  border-radius: 3px;
-}
 
 /* @media all and (max-width: 337px) {
   .logo {
@@ -345,23 +329,35 @@ a {
     position: relative;
     display: block;
     width: auto;
+    top: 12px;
   }
+
+  .active .item {
+    top: 12px;
+  }
+
   .button {
     order: 2;
   }
-  .submenu-active .submenu {
+
+  .menu.active + .menuBg {
+    display: none;
+  
+  }
+
+  /* .submenu-active .submenu {
     display: block;
     position: absolute;
     left: 0;
     top: 68px;
     background: #111;
-  }
+  } */
   .toggle {
     display: none;
   }
-  .submenu-active {
+  /* .submenu-active {
     border-radius: 0;
-  }
+  } */
 }
 
 
