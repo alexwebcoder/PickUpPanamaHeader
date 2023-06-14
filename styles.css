@@ -199,6 +199,41 @@ a {
   background-color: #ffffff;
 } */
 
+.menu li.logo:focus::after, .menu li.logo a:focus::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2px;  
+  right: 0  ;
+  bottom: -4px;
+  outline: 5px auto red;
+  height: 70px;
+  width: 200px;
+}
+
+.menu.active:focus {
+  visibility: visible;
+   opacity: 1;
+   display: grid;
+   position: absolute;
+}
+
+.menu.active li:focus, .menu.active li a:focus {
+  text-decoration: none;
+  outline: 2px solid currentColor;
+}
+
+.menu.active li:focus::after, .menu.active li a:focus::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+
 .menu.active + .menuBg {
   content: '';
   display: block;
@@ -366,27 +401,17 @@ a {
     color: #1e252c;
   }
 
-  .menu.active:focus, .menu:focus{
+  .menu:focus {
     visibility: visible;
      opacity: 1;
      display: grid;
-     position: absolute;;
+     position: absolute;
   }
 
-  .menu.active li:focus, .menu.active li a:focus, .menu li:focus, .menu li a:focus {
+  .menu li:focus, .menu li a:focus {
     text-decoration: none;
     outline: 2px solid currentColor;
   }
-
-  /* .menu.active li:focus::after, .menu.active li a:focus::after, .menu li:focus::after, .menu li a:focus::after {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    outline: 5px auto -webkit-focus-ring-color;
-  } */
 
   .toggle {
     display: none;
