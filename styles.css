@@ -196,8 +196,12 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: tan;
+  background: #354667;
   z-index: -1;
+}
+
+.menu.active .item a {
+  color: #ffffff;
 }
 
 .header.is-sticky .menu.active + .menuBg {
@@ -213,6 +217,7 @@ a {
   font-weight: 600;
   letter-spacing: .0rem;
   text-transform: uppercase;
+  color: #1e252c;
 }
 
 .menu li.subitem a {
@@ -344,6 +349,23 @@ a {
     display: none;
   
   }
+
+  .menu.active .item a {
+    color: #1e252c;
+  }
+
+  .menu.active:focus{
+    visibility: visible;
+     opacity: 1;
+     display: grid;
+     position: absolute;;
+  }
+
+  .menu.active li:focus, .menu.active li a:focus {
+    background-color: #414a2e;
+    text-decoration: none;
+  }
+
 
   /* .submenu-active .submenu {
     display: block;
