@@ -12,7 +12,12 @@ body {
 
 .content {
   height: 100vh;
-  margin-top: 400px;
+  margin-top: 110px;
+  text-align: center;
+}
+
+.content h1 {
+  margin-bottom: 10px;
 }
 
 .content img {
@@ -86,6 +91,7 @@ a {
   z-index: 1;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
+  height: 91px;
 }
 
 .progress-container {
@@ -107,6 +113,7 @@ a {
   padding: 0;
   backdrop-filter: blur(5px);
   animation: slideDown 0.35s ease-out;
+  height: 83px;
 }
 
 .header.header.is-sticky .logo {
@@ -320,6 +327,14 @@ a {
 
 @media all and (max-width: 285px) {
 
+  .header {
+    height: 67px;
+  }
+
+  .header.header.is-sticky {
+    height: 66px;
+  }
+
  .definition, .header.is-sticky .definition {
     color: #1e252c;
     /* padding: 0 0 0 8px; */
@@ -329,7 +344,13 @@ a {
     background: none;
     border-bottom: 2px solid #132257;
     padding-right: 25px;
+    padding-left: 6px;
  }
+
+ .header.is-sticky .definition {
+   padding-top: 8px;
+ }
+
 
  .toggle, .header.header.is-sticky .toggle {
   margin-top: -9px;
@@ -359,6 +380,10 @@ a {
  .logo, .header.header.is-sticky .logo {
   font-size: 16px;
   padding-left: 56px;
+ }
+
+ .content {
+  margin-top: 82px;
  }
 
 }
