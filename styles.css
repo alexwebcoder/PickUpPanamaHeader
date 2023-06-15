@@ -397,6 +397,23 @@ a {
 
 }
 
+@media all and (max-width: 257px) {
+  .menu.active + .menuBg {
+    top: 85px;
+  }
+
+  .header.header.is-sticky .menu.active + .menuBg {
+    top: 84px;
+  }
+
+  .definition span {
+    white-space: nowrap;
+  }
+
+  .toggle, .header.header.is-sticky .toggle {
+    margin-top: -15px
+}
+
 /* Tablet menu */
 @media all and (min-width: 700px) {
     .menu {
