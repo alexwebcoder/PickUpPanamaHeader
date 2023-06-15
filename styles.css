@@ -338,7 +338,12 @@ a {
 
  .progress-container, .header.header.is-sticky .progress-container {
   position: relative;
-  top: -4px;
+  top: -23px;
+  height: 2px;
+ }
+
+ .progress-bar, .header.header.is-sticky .progress-bar {
+  height: 2px;
  }
 
  .flag, .header.header.is-sticky .flag {
