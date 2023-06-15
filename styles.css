@@ -95,7 +95,7 @@ a {
 
 .progress-bar {
   height: 4px;
-  background: #2774AE;
+  background: #4fb1fb;
   width: 0;
 }
 
@@ -324,18 +324,37 @@ a {
  }
 
  .definition {
-    background: none;
     color: #1e252c;
-    padding: 0 0 0 8px;
-    font-size: 11px;
+    /* padding: 0 0 0 8px; */
+    font-size: 9px;
     position: relative;
-    top: -4px;
-    white-space: nowrap;
+    top: -23px;
+    background: none;
+    border-bottom: 2px solid #132257;
  }
 
  .toggle {
-  margin-top: 4px;
-  margin-right: -6px;
+  margin-top: 7px;
+  margin-right: -1px;
+ }
+
+ .progress-container {
+  position: relative;
+  top: -4px;
+ }
+
+ .flag {
+  width: 50px;
+  height: 36px;
+ }
+
+ .panama__star {
+  width: 13px;
+ }
+
+ .logo {
+  font-size: 16px;
+  padding-left: 63px;
  }
 
 }
