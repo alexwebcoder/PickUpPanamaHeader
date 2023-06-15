@@ -319,11 +319,8 @@ a {
 } */
 
 @media all and (max-width: 285px) {
- nav {
-  padding-right: 0;
- }
 
- .definition {
+ .definition, .header.is-sticky .definition {
     color: #1e252c;
     /* padding: 0 0 0 8px; */
     font-size: 9px;
@@ -331,30 +328,32 @@ a {
     top: -23px;
     background: none;
     border-bottom: 2px solid #132257;
+    padding-right: 25px;
  }
 
- .toggle {
-  margin-top: 7px;
-  margin-right: -1px;
+ .toggle, .header.header.is-sticky .toggle {
+  margin-top: -9px;
+  margin-right: 1px;
  }
 
- .progress-container {
+ .progress-container, .header.header.is-sticky .progress-container {
   position: relative;
   top: -4px;
  }
 
- .flag {
+ .flag, .header.header.is-sticky .flag {
   width: 50px;
   height: 36px;
+  left: 6px;
  }
 
- .panama__star {
+ .panama__star, .header.header.is-sticky .panama__star {
   width: 13px;
  }
 
- .logo {
+ .logo, .header.header.is-sticky .logo {
   font-size: 16px;
-  padding-left: 63px;
+  padding-left: 56px;
  }
 
 }
