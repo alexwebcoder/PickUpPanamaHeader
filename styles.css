@@ -35,7 +35,7 @@ nav {
   background: #132257;
   color: #FFF;
   padding: 4px 0 4px 10px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: .09rem;
 }
 
@@ -258,20 +258,25 @@ a {
   display: block;
   height: 192px;
   position: absolute;
-  top: 92px;
+  top: 94px;
   left: 0;
   bottom: 0;
   right: 0;
-  background: #354667;
+  background: #031c0a;
   z-index: -1;
+  border-top: 1px solid #FFFFFF;
 }
 
 .menu.active .item a {
   color: #ffffff;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: .03rem;
 }
 
 .header.is-sticky .menu.active + .menuBg {
-  top: 91px;
+  top: 89px;
 }
 
 .menu li a {
@@ -327,18 +332,14 @@ a {
 
 @media all and (max-width: 285px) {
 
-  .header {
-    height: 67px;
-  }
-
-  .header.header.is-sticky {
-    height: 66px;
+  .header, .header.header.is-sticky {
+    height: 83px;
   }
 
  .definition, .header.is-sticky .definition {
     color: #1e252c;
     /* padding: 0 0 0 8px; */
-    font-size: 9px;
+    font-size: 12px;
     position: relative;
     top: -23px;
     background: none;
@@ -383,8 +384,16 @@ a {
  }
 
  .content {
-  margin-top: 82px;
+  margin-top: 91px;
  }
+
+ .header.is-sticky .menu.active + .menuBg {
+  top: 70px;
+}
+
+.menu.active + .menuBg {
+  top: 71px;
+}
 
 }
 
