@@ -1,13 +1,13 @@
 /* Basic styling */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: sans-serif;
-    font-size: 16px;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
 .content {
@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-    height: 70px;
+  height: 70px;
 }
 
 .definition {
@@ -44,18 +44,18 @@ nav {
 }
 
 a {
-    color: #1e252c;
-    text-decoration: none;
+  color: #1e252c;
+  text-decoration: none;
 }
 
 .menu {   
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .logo {
-    font-size: 22px;
-    padding: 4.5px 10px 4.5px 91px;
-    transition: background 0.3s;
+  font-size: 22px;
+  padding: 4.5px 10px 4.5px 91px;
+  transition: background 0.3s;
 }
 
 /* psudo-element to make the flag clickable */
@@ -73,7 +73,7 @@ a {
 }
 
 .item {
-    padding: 10px;
+  padding: 10px;
 }
 
 .item:not(.button) a:hover,
@@ -126,7 +126,7 @@ a {
   height: 47px
 }
 
-.header.header.is-sticky .panama__star {
+.header.header.is-sticky .panama-star {
   width: 16px;
 }
 
@@ -167,7 +167,7 @@ a {
   place-items: center;
 }
 
-.panama__star {
+.panama-star {
   width: 19px;
   aspect-ratio: 1;
   /* background-color: white; */
@@ -228,7 +228,6 @@ a {
 .menu li.toggle a:focus { 
   outline: 5px auto transparent;
 }
-
 
 .menu.active + .menuBg {
   content: '';
@@ -296,86 +295,89 @@ a {
 @media all and (max-width: 285px) {
 
   .header, .header.header.is-sticky {
-    height: 83px;
+      height: 83px;
+    }
+
+  .definition, .header.is-sticky .definition {
+      color: #1e252c;
+      font-size: 12px;
+      position: relative;
+      top: -23px;
+      background: none;
+      border-bottom: 2px solid #132257;
+      padding-right: 25px;
+      padding-left: 6px;
   }
 
- .definition, .header.is-sticky .definition {
-    color: #1e252c;
-    /* padding: 0 0 0 8px; */
-    font-size: 12px;
+  .header.is-sticky .definition {
+    padding-top: 8px;
+  }
+
+  .toggle, .header.header.is-sticky .toggle {
+    margin-top: -9px;
+    margin-right: 1px;
+  }
+
+  .progress-container, .header.header.is-sticky .progress-container {
     position: relative;
     top: -23px;
-    background: none;
-    border-bottom: 2px solid #132257;
-    padding-right: 25px;
-    padding-left: 6px;
- }
+    height: 2px;
+  }
 
- .header.is-sticky .definition {
-   padding-top: 8px;
- }
+  .progress-bar, .header.header.is-sticky .progress-bar {
+    height: 2px;
+  }
 
+  .flag, .header.header.is-sticky .flag {
+    width: 50px;
+    height: 36px;
+    left: 6px;
+  }
 
- .toggle, .header.header.is-sticky .toggle {
-  margin-top: -9px;
-  margin-right: 1px;
- }
+  .panama-star, .header.header.is-sticky .panama-star {
+    width: 13px;
+  }
 
- .progress-container, .header.header.is-sticky .progress-container {
-  position: relative;
-  top: -23px;
-  height: 2px;
- }
+  .logo, .header.header.is-sticky .logo {
+    font-size: 16px;
+    padding-left: 56px;
+  }
 
- .progress-bar, .header.header.is-sticky .progress-bar {
-  height: 2px;
- }
+  .content {
+    margin-top: 91px;
+  }
 
- .flag, .header.header.is-sticky .flag {
-  width: 50px;
-  height: 36px;
-  left: 6px;
- }
+  .header.is-sticky .menu.active + .menuBg {
+    top: 70px;
+  }
 
- .panama__star, .header.header.is-sticky .panama__star {
-  width: 13px;
- }
-
- .logo, .header.header.is-sticky .logo {
-  font-size: 16px;
-  padding-left: 56px;
- }
-
- .content {
-  margin-top: 91px;
- }
-
- .header.is-sticky .menu.active + .menuBg {
-  top: 70px;
-}
-
-.menu.active + .menuBg {
-  top: 71px;
-}
+  .menu.active + .menuBg {
+    top: 71px;
+  }
 
 }
 
 @media all and (max-width: 257px) {
-  .menu.active + .menuBg {
-    top: 85px;
+    .menu.active + .menuBg {
+      top: 85px;
+    }
+
+    .header.header.is-sticky .menu.active + .menuBg {
+      top: 84px;
+    }
+
+    .definition span {
+      white-space: nowrap;
+    }
+
+    .toggle, .header.header.is-sticky .toggle {
+      margin-top: -15px
   }
 
-  .header.header.is-sticky .menu.active + .menuBg {
-    top: 84px;
+    .menu.active li.toggle a:focus::after, .menu li.toggle a:focus::after {
+     top: 6px;
+     right: 1px;
   }
-
-  .definition span {
-    white-space: nowrap;
-  }
-
-  .toggle, .header.header.is-sticky .toggle {
-    margin-top: -15px
-}
 
 }
 
@@ -390,7 +392,6 @@ a {
     .toggle {
         flex: 1;
         text-align: right;
-        /* order: 2; */
     }
 }
 
@@ -403,7 +404,6 @@ a {
   }
  
   .item {
-    order: 1;
     position: relative;
     display: block;
     width: auto;
@@ -422,19 +422,6 @@ a {
   .menu.active .item a {
     color: #1e252c;
   }
-
-  /* .menu:focus {
-    visibility: visible;
-     opacity: 1;
-     display: grid;
-     position: absolute;
-  }
-
-  .menu li:focus, .menu li a:focus {
-    text-decoration: none;
-    outline: 2px solid currentColor;
-  } */
-
   .toggle {
     display: none;
   }
