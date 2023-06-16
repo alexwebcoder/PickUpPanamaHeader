@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
@@ -232,37 +232,41 @@ a {
 .menu.active + .menuBg {
   content: '';
   display: block;
-  height: 185px;
+  height: 190px;
   position: absolute;
   top: 94px;
   left: 0;
   bottom: 0;
   right: 0;
-  background: #002244;
+  background: aliceblue;
   z-index: -1;
   border-top: 1px solid #FFFFFF;
 }
 
 .menu.active .item a {
-  color: #ffffff;
+  color: #1e252c;
   font-size: 14px;
   text-transform: capitalize;
-  font-weight: 400;
   letter-spacing: .03rem;
 }
 
 .header.is-sticky .menu.active + .menuBg {
   top: 89px;
+  height: 189px;
 }
 
 .menu li a {
   display: block;
   padding: 5px 5px;
   white-space: nowrap;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: .0rem;
   text-transform: uppercase;
   color: #1e252c;
+}
+
+.menu li.logo a {
+  font-weight: 700;
 }
 
 .menu li.subitem a {
