@@ -96,11 +96,11 @@ a {
 
 .progress-container {
   width: 100%;
-  height: 4px;
+  height: 2px;
 }
 
 .progress-bar {
-  height: 4px;
+  height: 2px;
   background: #4fb1fb;
   width: 0;
 }
@@ -230,39 +230,16 @@ a {
 }
 
 
-/* .menu.active:focus {
-  visibility: visible;
-   opacity: 1;
-   display: grid;
-   position: absolute;
-} */
-
-/* .menu.active li:focus, .menu.active li a:focus {
-  text-decoration: none;
-  outline: 2px solid currentColor;
-} */
-
-/* .menu.active li:focus::after, .menu.active li a:focus::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  outline: 5px auto -webkit-focus-ring-color;
-} */
-
-
 .menu.active + .menuBg {
   content: '';
   display: block;
-  height: 192px;
+  height: 185px;
   position: absolute;
   top: 94px;
   left: 0;
   bottom: 0;
   right: 0;
-  background: #031c0a;
+  background: #002244;
   z-index: -1;
   border-top: 1px solid #FFFFFF;
 }
@@ -294,14 +271,16 @@ a {
 }
 
 .toggle {
-  order: 1;
   font-size: 20px;
   margin-right: 6px;
   margin-left: auto;
 }
 
+.menu .toggle a {
+  display: inline-block;
+}
+
 .item {
-  order: 3;
   width: 100%;
   text-align: center;
   display: none;
@@ -311,24 +290,8 @@ a {
   display: block;
   position: relative;
   top: 21px;
+  border-bottom: 1px solid #1c4161;
 }
-
-/* @media all and (max-width: 337px) {
-  .logo {
-    font-size: 17px;
-    padding: 4.5px 10px 7.5px 65px;
-   }
-
-   .flag {
-    width: 50px;
-    height: 36px;
-   }
-
-   .panama__star {
-    width: 13px;
-   }
-
-} */
 
 @media all and (max-width: 285px) {
 
@@ -414,6 +377,8 @@ a {
     margin-top: -15px
 }
 
+}
+
 /* Tablet menu */
 @media all and (min-width: 700px) {
     .menu {
@@ -425,7 +390,7 @@ a {
     .toggle {
         flex: 1;
         text-align: right;
-        order: 2;
+        /* order: 2; */
     }
 }
 
@@ -436,9 +401,7 @@ a {
     flex-wrap: nowrap;
     background: none;
   }
-  .logo {
-    order: 0;
-  }
+ 
   .item {
     order: 1;
     position: relative;
@@ -449,6 +412,7 @@ a {
 
   .active .item {
     top: 12px;
+    border-bottom: none;
   }
 
   .menu.active + .menuBg {
