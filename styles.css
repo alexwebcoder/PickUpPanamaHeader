@@ -123,6 +123,7 @@ a {
 .header.header.is-sticky .logo {
   font-size: 18px;
   padding-top: 6.5px;
+  padding-left: 85px;
 }
 
 .header.header.is-sticky .flag {
