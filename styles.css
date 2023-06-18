@@ -7,25 +7,22 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
+  color: #1e252c;
 }
 
 .content {
   height: 100vh;
-  margin-top: 110px;
+  margin-top: 193px;
   text-align: center;
 }
 
-.content h1 {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-.content img {
-  height: auto;
-  max-width: 100%;
-  display: block;
-  margin: auto;
+.content .mission {
+  position: relative;
+  top: 94px;
+  background-color: #132257;
+  color: #FFFFFF;
+  padding: 28px 0 30px;
 }
 
 nav {
@@ -34,9 +31,8 @@ nav {
 
 .definition {
   background: #FFFFFF;
-  color: #1e252c;
   padding: 4px 0 4px 10px;
-  font-size: 14px;
+  font-size: .875rem;
   font-weight: 500;
   letter-spacing: .09rem;
   border-top: 2px solid #1e252c;
@@ -48,8 +44,8 @@ nav {
 }
 
 a {
-  color: #1e252c;
   text-decoration: none;
+  color: #1e252c;
 }
 
 .menu {   
@@ -57,7 +53,7 @@ a {
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 1.375rem;
   padding: 4.5px 10px 4.5px 91px;
   transition: background 0.3s;
 }
@@ -121,7 +117,7 @@ a {
 }
 
 .header.header.is-sticky .logo {
-  font-size: 18px;
+  font-size: 1.125rem;
   padding-top: 6.5px;
   padding-left: 85px;
 }
@@ -144,7 +140,7 @@ a {
     transform: translateY(-100%);
   }
   to {
-    transform: translatY(0);
+    transform: translateY(0);
   }
 }
 
@@ -249,8 +245,7 @@ a {
 }
 
 .menu.active .item a {
-  color: #1e252c;
-  font-size: 14px;
+  font-size: .875rem;
   text-transform: capitalize;
   letter-spacing: .03rem;
 }
@@ -267,7 +262,6 @@ a {
   font-weight: 500;
   letter-spacing: .0rem;
   text-transform: uppercase;
-  color: #1e252c;
 }
 
 .menu li.logo a {
@@ -279,7 +273,7 @@ a {
 }
 
 .toggle {
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-right: 6px;
   margin-left: auto;
 }
@@ -308,8 +302,7 @@ a {
     }
 
   .definition, .header.is-sticky .definition {
-      color: #1e252c;
-      font-size: 12px;
+      font-size: .75rem;
       position: relative;
       top: -23px;
       background: none;
@@ -348,7 +341,7 @@ a {
   }
 
   .logo, .header.header.is-sticky .logo {
-    font-size: 16px;
+    font-size: 1rem;
     padding-left: 56px;
   }
 
@@ -427,10 +420,7 @@ a {
   .menu.active + .menuBg {
     display: none;
   }
-
-  .menu.active .item a {
-    color: #1e252c;
-  }
+  
   .toggle {
     display: none;
   }
