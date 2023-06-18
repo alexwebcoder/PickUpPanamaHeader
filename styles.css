@@ -9,20 +9,23 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #1e252c;
+  height: 100vh;
+  background-color: aliceblue;
 }
 
 .content {
-  height: 100vh;
   margin-top: 193px;
   text-align: center;
 }
 
 .content .mission {
   position: relative;
-  top: 94px;
+  top: -94px;
   background-color: #132257;
   color: #FFFFFF;
-  padding: 28px 0 30px;
+  padding: 85px 10px;
+  line-height: 27.2px;
+  letter-spacing: .04rem;
 }
 
 nav {
@@ -346,7 +349,7 @@ a {
   }
 
   .content {
-    margin-top: 91px;
+    margin-top: 177px;
   }
 
   .header.is-sticky .menu.active + .menuBg {
