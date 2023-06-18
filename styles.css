@@ -23,9 +23,17 @@ body {
   top: -94px;
   background-color: #132257;
   color: #FFFFFF;
-  padding: 85px 10px;
   line-height: 27.2px;
   letter-spacing: .04rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 242px;
+}
+
+.mission p {
+  width: 315px;
+  font-size: .875rem;
 }
 
 nav {
@@ -298,6 +306,19 @@ a {
   border-bottom: 1px solid #1c4161;
 }
 
+@media all and (max-width: 336px) {
+  .content .mission {
+    height: 235px;
+    line-height: 18.2px;
+  }
+
+  .mission p {
+    width: 250px;
+    font-size: .813rem;
+    padding: 0 5px;
+  }
+}
+
 @media all and (max-width: 285px) {
 
   .header, .header.header.is-sticky {
@@ -397,6 +418,10 @@ a {
     .toggle {
         flex: 1;
         text-align: right;
+    }
+    .mission p {
+      width: 480px;
+      font-size: 1rem;
     }
 }
 
