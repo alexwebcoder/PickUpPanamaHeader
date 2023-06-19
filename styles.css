@@ -352,6 +352,26 @@ a {
   margin-top: -16px;
 }
 
+.diamond-text-box .right:before, .diamond-text-box .right::after {
+  content: " ";
+  top: 50%;
+  border: solid transparent;
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-left-color: #888;
+  border-width: 17px;
+  margin-top: -17px;
+  left: 100%;
+}
+
+.diamond-text-box .right::after {
+  border-left-color: #FFF;
+  border-width: 16px;
+  margin-top: -16px;
+}
+
 .diamond-text-box .content {
   display: inline-block;
   border: 1px solid #b0b0b0;
@@ -376,19 +396,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 25px; 
 }
 
 .feature-photo-container {
   flex: 1 0 70%;
-  padding: 10px;
-  /* background-image: url("https://static.euronews.com/articles/stories/07/56/14/16/1000x563_cmsv2_4377a059-ee3d-53d5-8e7e-6689b151f275-7561416.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
-
-/* .feature-photo-container figure {
-  min-height: 100%;
-} */
 
 .featured-content-container img {
   max-width: 100%;
@@ -396,6 +409,17 @@ a {
   height: auto;
   display: block;
 }
+
+.grow .feature-wrapper{
+  transition: 1s ease;
+  border: 2px solid transparent;
+  }
+  
+.grow:hover .feature-wrapper{
+  border: 2px solid #1493f3;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
+ }
+
 
 .featured-content-container h3 {
   font-size: 2rem;
