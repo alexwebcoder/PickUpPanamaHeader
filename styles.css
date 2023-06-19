@@ -10,7 +10,6 @@ body {
   font-size: 1rem;
   color: #1e252c;
   height: 100vh;
-  background-color: aliceblue;
 }
 
 .content {
@@ -308,7 +307,6 @@ a {
 }
 
 .featured-content-container {
-  min-height: 653px;
   position: relative;
   top: -94px;
   display: flex;
@@ -316,16 +314,16 @@ a {
 }
 
 .feature-photo-container {
-  background-color: #ccc;
   flex: 1 0 70%;
+  padding: 10px;
   /* background-image: url("https://static.euronews.com/articles/stories/07/56/14/16/1000x563_cmsv2_4377a059-ee3d-53d5-8e7e-6689b151f275-7561416.jpg");
   background-repeat: no-repeat;
   background-size: cover; */
 }
 
-.feature-photo-container figure {
+/* .feature-photo-container figure {
   min-height: 100%;
-}
+} */
 
 .featured-content-container img {
   max-width: 100%;
@@ -336,8 +334,17 @@ a {
 
 .featured-content-container h3 {
   font-size: 2rem;
-  line-height: 5.2rem;
 }
+
+.featured-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px 25px;
+  gap: 28px;
+}
+
 
 @media all and (max-width: 336px) {
   .content .mission {
