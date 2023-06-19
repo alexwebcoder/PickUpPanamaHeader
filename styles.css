@@ -34,6 +34,7 @@ body {
 .mission p {
   width: 315px;
   font-size: .875rem;
+  text-align: left;
 }
 
 nav {
@@ -306,16 +307,41 @@ a {
   border-bottom: 1px solid #1c4161;
 }
 
+.featured-content-container {
+  min-height: 653px;
+  background-color: tan;
+  position: relative;
+  top: -94px;
+  display: flex;
+
+}
+
+.feature-photo-container {
+  background-color: #ccc;
+  flex: 1 0 70%;
+}
+
+.featured-content-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.featured-content-container h3 {
+  font-size: 2rem;
+  line-height: 5.2rem;
+}
+
 @media all and (max-width: 336px) {
   .content .mission {
-    height: 235px;
+    height: 167px;
     line-height: 18.2px;
   }
 
   .mission p {
     width: 250px;
     font-size: .813rem;
-    padding: 0 5px;
+    padding: 0 12px;
   }
 }
 
@@ -422,6 +448,7 @@ a {
     .mission p {
       width: 480px;
       font-size: 1rem;
+      text-align: center;
     }
 }
 
