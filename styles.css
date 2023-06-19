@@ -306,11 +306,16 @@ a {
   border-bottom: 1px solid #1c4161;
 }
 
+.feature-wrapper {
+  display: flex;
+}
+
 .featured-content-container {
   position: relative;
-  top: -94px;
+  top: -73px;
   display: flex;
-
+  flex-direction: column;
+  gap: 20px;
 }
 
 .feature-photo-container {
