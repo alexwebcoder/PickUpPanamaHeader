@@ -50,8 +50,6 @@ nav {
   font-size: .875rem;
   font-weight: 500;
   letter-spacing: .09rem;
-  border-top: 2px solid #1e252c;
-  border-bottom: 2px solid #1e252c;
 }
 
 .definition span {
@@ -234,7 +232,7 @@ a {
 .menu.active li.toggle a:focus::after, .menu li.toggle a:focus::after {
   content: '';
   position: absolute;
-  top: 19px;
+  top: 21px;
   right: 4px;  
   outline: 5px auto -webkit-focus-ring-color;
   height: 30px;
@@ -243,6 +241,11 @@ a {
 
 .menu li.toggle a:focus { 
   outline: 5px auto transparent;
+}
+
+.fa-times:before {
+  position: relative;
+  right: 1px;
 }
 
 .menu.active + .menuBg {
@@ -459,7 +462,6 @@ a {
       position: relative;
       top: -23px;
       background: none;
-      border-bottom: 2px solid #132257;
       padding-right: 25px;
       padding-left: 6px;
   }
@@ -507,8 +509,15 @@ a {
   }
 
   .menu.active + .menuBg {
-    top: 71px;
+    top: 84px;
   }
+
+  .fa-bars:before, .fa-times:before {
+    /* content: "\f0c9"; */
+    top: 13px;
+    position: relative;
+    right: 4px;
+}
 
 }
 
@@ -530,8 +539,8 @@ a {
   }
 
     .menu.active li.toggle a:focus::after, .menu li.toggle a:focus::after {
-     top: 6px;
-     right: 1px;
+     top: 17px;
+     right: 2px;
   }
 
 }
