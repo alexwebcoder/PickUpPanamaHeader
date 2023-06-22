@@ -24,14 +24,14 @@ body {
 .content .mission {
   position: relative;
   top: -94px;
-  background-color: #132257;
-  color: #FFFFFF;
+  color: #132257;
   line-height: 27.2px;
   letter-spacing: .04rem;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 242px;
+  border-top: 1px solid #a1a1a1;
 }
 
 .mission p {
@@ -389,10 +389,6 @@ a {
   font-size: 1.3125rem;
 }
 
-.feature-wrapper {
-  display: flex;
-}
-
 .featured-content-container {
   position: relative;
   top: -73px;
@@ -416,6 +412,8 @@ a {
 .grow .feature-wrapper{
   transition: 1s ease;
   border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
   }
   
 .grow:hover .feature-wrapper{
@@ -435,6 +433,7 @@ a {
   align-items: center;
   padding: 40px 25px;
   gap: 28px;
+  text-align: left;
 }
 
 
