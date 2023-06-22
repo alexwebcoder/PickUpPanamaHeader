@@ -87,8 +87,6 @@ a {
 
 .item {
   padding: 10px;
-  transition: 1s ease;
-  border-bottom: 2px solid transparent;
 }
 
 
@@ -588,10 +586,31 @@ a {
   }
 
   
-  .item:not(.button) a:hover,
+  /* .item:not(.button) a:hover,
   .item a:hover::after {
       border-bottom: 2px solid #1493f3;
-  }
+  } */
+
+  /* .item:after {
+        content:'';
+        position: absolute;
+        width: 74%;
+        height: 3px;
+        bottom: 9px;
+        left: 11px;
+        background-color: #1493f3;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s;
+    }
+
+    .item:hover:after {
+            transform-origin: bottom left;
+            transform: scaleX(1);
+        }
+    } */
+
+
 
   .active .item {
     border-bottom: none;
