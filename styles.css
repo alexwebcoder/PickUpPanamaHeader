@@ -87,12 +87,10 @@ a {
 
 .item {
   padding: 10px;
+  transition: 1s ease;
+  border-bottom: 2px solid transparent;
 }
 
-.item:not(.button) a:hover,
-.item a:hover::after {
-    color: #ccc;
-}
 
 /* nav progress bar */
 
@@ -237,6 +235,11 @@ a {
   outline: 5px auto -webkit-focus-ring-color;
   height: 30px;
   width: 30px;
+}
+
+.header.is-sticky a:focus .fa-bars:before, .header.is-sticky a:focus .fa-times:before {
+  position: relative;
+  top: 5px;
 }
 
 .menu li.toggle a:focus { 
@@ -416,7 +419,7 @@ a {
   flex-direction: column;
   }
   
-.grow:hover .feature-wrapper{
+.grow:hover .feature-wrapper {
   border: 2px solid #1493f3;
   box-shadow: 0 0 11px rgba(33,33,33,.2);
  }
@@ -518,6 +521,11 @@ a {
     right: 4px;
 }
 
+.header.is-sticky a:focus .fa-bars:before, .header.is-sticky a:focus .fa-times:before {
+  position: relative;
+  top: 5px;
+}
+
 }
 
 @media all and (max-width: 257px) {
@@ -557,7 +565,7 @@ a {
         text-align: right;
     }
     .mission p {
-      width: 480px;
+      width: 488px;
       font-size: 1rem;
     }
 }
@@ -574,12 +582,24 @@ a {
     position: relative;
     display: block;
     width: auto;
-    top: 12px;
+    top: 27px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+  }
+
+  
+  .item:not(.button) a:hover,
+  .item a:hover::after {
+      border-bottom: 2px solid #1493f3;
   }
 
   .active .item {
-    top: 12px;
     border-bottom: none;
+  }
+
+  .menu.active .item a {
+    text-transform: uppercase;
+    font-size: 1rem;
   }
 
   .menu.active + .menuBg {
