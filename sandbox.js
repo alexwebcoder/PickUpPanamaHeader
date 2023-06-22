@@ -1,50 +1,71 @@
 const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.menu');
+const openMenu = document.querySelector('.hamburger-icon');
+const closeMenu = document.querySelector('.close-btn');
 
 //Toggle mobile menu
 
-function toggleMenu() {
-  if (menu.classList.contains('active')) {
-      menu.classList.remove('active');
-    
-    //adds the menu (hamburger) icon
-    toggle.querySelector('a').innerHTML = `<i class='fas fa-bars'></i>`;
-  } else {
-    menu.classList.add(`active`);
-  //adds the close (x) icon
-  toggle.querySelector('a').innerHTML = `<i class='fas fa-times'></i>`;
-  
-  }
-  
+const openNav = () => {
+  document.querySelector('#mobileMenu').style.width = '250px';
 }
+
+const closeNav = () => {
+  document.querySelector('#mobileMenu').style.width = '0';
+}
+
+
+openMenu.addEventListener('click', () => {
+  openNav();
+});
+
+closeMenu.addEventListener('click', () => {
+  closeNav();
+})
+
+// function toggleMenu() {
+//   if (menu.classList.contains('active')) {
+//       menu.classList.remove('active');
+    
+//     //adds the menu (hamburger) icon
+//     toggle.querySelector('a').innerHTML = `<i class='fas fa-bars'></i>`;
+//   } else {
+//     menu.classList.add(`active`);
+//   //adds the close (x) icon
+//   toggle.querySelector('a').innerHTML = `<i class='fas fa-times'></i>`;
+  
+//   }
+  
+// }
 
 //Event Listener
 
-toggle.addEventListener('click', toggleMenu, false);
+// toggle.addEventListener('click', toggleMenu, false);
 
 
-// const items = document.querySelectorAll('.item');
+window.addEventListener()
 
-// //Activate Submenu
+const items = document.querySelectorAll('.item');
 
-// function toggleItem() {
-//   if (this.classList.contains('submenu-active')) {
-//     this.classList.remove('submenu-active');
-//   } else if (menu.querySelector('.submenu-active')){
-//     menu.querySelector('submenu-active').classList.remove('submenu-active');
-//   } else {
-//     this.classList.add('submenu-active');
-//   } 
-// }
+//Activate Submenu
 
-// //Event Listeners
+function toggleItem() {
+  if (this.classList.contains('submenu-active')) {
+    this.classList.remove('submenu-active');
+  } else if (menu.querySelector('.submenu-active')){
+    menu.querySelector('submenu-active').classList.remove('submenu-active');
+  } else {
+    this.classList.add('submenu-active');
+  } 
+}
 
-// for (let item of items) {
-//   if (item.querySelector('.submenu')) {
-//     item.addEventListener('click', toggleItem, false);
-//     item.addEventListener('keypress', toggleItem, false);
-//   }
-// }
+//Event Listeners
+
+for (let item of items) {
+  if (item.querySelector('.submenu')) {
+    item.addEventListener('click', toggleItem, false);
+    item.addEventListener('keypress', toggleItem, false);
+  }
+}
 
 //when user scrolls page, this function executes
 
