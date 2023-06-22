@@ -42,7 +42,6 @@ closeMenu.addEventListener('click', () => {
 // toggle.addEventListener('click', toggleMenu, false);
 
 
-window.addEventListener()
 
 const items = document.querySelectorAll('.item');
 
