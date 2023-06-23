@@ -217,18 +217,27 @@ a {
   height: auto;
   width: 0;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   z-index: 1;
   top: 100px;
   left: 0;
   background-color: aliceblue;
   overflow-x: hidden;
   transition: 0.5s;
-  border-right: 2px solid #1e252c;
-  border-bottom: 2px solid #1e252c;
+}
+
+.sidenav  li {
+  list-style-type: none;
+  border-bottom: 1px solid #a1a1a1;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px;
   text-decoration: none;
   font-size: .875rem;
   font-weight: 500;
@@ -238,8 +247,11 @@ a {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+
+.sidenav.active {
+  width: 230px;
+  border-right: 1px solid #a1a1a1;
+  border-bottom: 1px solid #a1a1a1;
 }
 
 .hamburger-icon {
@@ -271,7 +283,11 @@ a {
 }
 
 .header.header.is-sticky .sidenav {
-  top: 94px;
+  top: 95px;
+}
+
+.header.header.is-sticky .definition {
+  border-bottom: 1px solid #a1a1a1;
 }
 
 .menu li.toggle a:focus { 
@@ -520,8 +536,13 @@ a {
   top: 5px;
 }
 
+.sidenav.active {
+  top: 84px;
+  width: 115px;
+}
+
 .header.header.is-sticky .sidenav {
-  top: 94px;
+  top: 71px;
 }
 
 }
@@ -587,21 +608,21 @@ a {
   }
 
   
-  .item:not(.button) a:hover,
+  /* .item:not(.button) a:hover,
   .item a:hover::after {
       border-bottom: 2px solid #1493f3;
-  }
+  } */
 
   .item:after {
         content:'';
         position: absolute;
-        width: 74%;
+        width: 78%;
         height: 3px;
         bottom: 9px;
-        left: 11px;
+        left: 12px;
         background-color: #1493f3;
         transform: scaleX(0);
-        transform-origin: bottom right;
+        transform-origin: bottom left;
         transition: transform 0.3s;
     }
 
