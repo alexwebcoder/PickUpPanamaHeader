@@ -81,11 +81,6 @@ a {
   z-index: 1;
 }
 
-.item {
-  padding: 10px;
-}
-
-
 /* nav progress bar */
 
 .header {
@@ -116,7 +111,6 @@ a {
 .header.is-sticky {
   position: fixed;
   padding: 0;
-  /* backdrop-filter: blur(5px); */
   animation: slideDown 0.35s ease-out;
   height: 83px;
 }
@@ -213,7 +207,7 @@ a {
   content: '';
   position: absolute;
   top: 4px;
-  left: 4px;  
+  left: 4px;
   outline: 5px auto -webkit-focus-ring-color;
   height: 65px;
   width: 195px;
@@ -224,19 +218,22 @@ a {
   width: 0;
   position: absolute;
   z-index: 1;
-  top: 99px;
+  top: 100px;
   left: 0;
-  background-color: #111;
+  background-color: aliceblue;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  border-right: 2px solid #1e252c;
+  border-bottom: 2px solid #1e252c;
 }
 
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: .875rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: .03rem;
   display: block;
   transition: 0.3s;
 }
@@ -244,14 +241,6 @@ a {
 .sidenav a:hover {
   color: #f1f1f1;
 }
-
-/* .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-} */
 
 .hamburger-icon {
   font-size: 30px;
@@ -281,6 +270,10 @@ a {
   top: 5px;
 }
 
+.header.header.is-sticky .sidenav {
+  top: 94px;
+}
+
 .menu li.toggle a:focus { 
   outline: 5px auto transparent;
 }
@@ -288,32 +281,6 @@ a {
 .fa-times:before {
   position: relative;
   right: 1px;
-}
-
-.menu.active + .menuBg {
-  content: '';
-  display: block;
-  height: 190px;
-  position: absolute;
-  top: 94px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: aliceblue;
-  z-index: -1;
-  border-top: 1px solid #FFFFFF;
-  width: 250px;
-}
-
-.menu.active .item a {
-  font-size: .875rem;
-  text-transform: capitalize;
-  letter-spacing: .03rem;
-}
-
-.header.is-sticky .menu.active + .menuBg {
-  top: 89px;
-  height: 189px;
 }
 
 .menu li a {
@@ -348,13 +315,6 @@ a {
   text-align: center;
   display: none;
 }
-
-/* .active .item {
-  display: block;
-  position: relative;
-  top: 21px;
-  border-bottom: 1px solid #1c4161;
-} */
 
 .line-divider {
   position: relative;
@@ -547,13 +507,6 @@ a {
     margin-top: 177px;
   }
 
-  .header.is-sticky .menu.active + .menuBg {
-    top: 70px;
-  }
-
-  .menu.active + .menuBg {
-    top: 84px;
-  }
 
   .fa-bars:before, .fa-times:before {
     /* content: "\f0c9"; */
@@ -565,6 +518,10 @@ a {
 .header.is-sticky a:focus .fa-bars:before, .header.is-sticky a:focus .fa-times:before {
   position: relative;
   top: 5px;
+}
+
+.header.header.is-sticky .sidenav {
+  top: 94px;
 }
 
 }
@@ -624,6 +581,7 @@ a {
     display: block;
     width: auto;
     top: 27px;
+    padding: 10px;
     border-bottom: 2px solid transparent;
     text-transform: uppercase;
   }
