@@ -231,9 +231,8 @@ a {
 .sidenav  li {
   list-style-type: none;
   border-bottom: 1px solid #a1a1a1;
-  display: flex;
   width: 100%;
-  justify-content: center;
+  text-align: center;
 }
 
 .sidenav a {
@@ -244,6 +243,7 @@ a {
   text-transform: capitalize;
   letter-spacing: .03rem;
   display: block;
+  width: 100%;
   transition: 0.3s;
 }
 
