@@ -220,11 +220,11 @@ a {
 }
 
 .sidenav {
-  height: 50%;
+  height: auto;
   width: 0;
-  position: fixed;
+  position: absolute;
   z-index: 1;
-  top: 0;
+  top: 99px;
   left: 0;
   background-color: #111;
   overflow-x: hidden;
@@ -245,13 +245,13 @@ a {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+/* .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
+} */
 
 .hamburger-icon {
   font-size: 30px;
@@ -302,6 +302,7 @@ a {
   background: aliceblue;
   z-index: -1;
   border-top: 1px solid #FFFFFF;
+  width: 250px;
 }
 
 .menu.active .item a {
@@ -348,12 +349,12 @@ a {
   display: none;
 }
 
-.active .item {
+/* .active .item {
   display: block;
   position: relative;
   top: 21px;
   border-bottom: 1px solid #1c4161;
-}
+} */
 
 .line-divider {
   position: relative;
@@ -668,6 +669,10 @@ a {
   }
   
   .toggle {
+    display: none;
+  }
+
+  .sidenav {
     display: none;
   }
 
