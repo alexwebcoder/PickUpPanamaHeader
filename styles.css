@@ -22,6 +22,10 @@ body {
   text-transform: uppercase;
 }
 
+.centered {
+  text-align: center;
+}
+
 .content {
   margin-top: 193px;
   text-align: center;
@@ -29,8 +33,6 @@ body {
 }
 
 .content .mission {
-  position: relative;
-  top: -98px;
   color: #000;
   line-height: 27.2px;
   letter-spacing: .04rem;
@@ -41,12 +43,51 @@ body {
   border-top: 1px solid #a1a1a1;
   background-color: #f5f5f5;
   font-weight: 500;
+  margin-top: -98px;
 }
 
 .mission p {
   width: 315px;
   font-size: .875rem;
   text-align: left;
+}
+
+.hero-image img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.subtext figure {
+  width: 80%;
+  margin: auto;
+}
+
+.subtext figcaption {
+  padding: 14px 0;
+}
+
+.articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  margin: auto;
+  width: 98%;
+}
+
+
+
+.articles .subtext {
+  flex: 1 0 25%;
+  text-align: left;
+}
+
+.subtext img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
 }
 
 nav {
@@ -436,8 +477,6 @@ a {
 }
 
 .featured-content-container {
-  position: relative;
-  top: -98px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -636,9 +675,6 @@ a {
 /* Tablet menu */
 @media all and (min-width: 700px) {
 
-  .grow .feature-wrapper {
-    flex-direction: row;
-  }
     .menu {
         justify-content: center;
     }
@@ -657,6 +693,11 @@ a {
 
 /* Desktop menu */
 @media all and (min-width: 960px) {
+
+  .grow .feature-wrapper {
+    flex-direction: row;
+  }
+
   .menu {
     align-items: flex-start;
     flex-wrap: nowrap;
