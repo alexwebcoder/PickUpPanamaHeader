@@ -131,12 +131,12 @@ a {
 
 .logo a::before {
   content: '';
-  top: 10px;
-  left: 10px;
+  top: 7px;
+  left: -81px;
   right: 0;
   bottom: 0;
   position: absolute;
-  width: 79px;
+  width: 87px;
   height: 52px;
   z-index: 1;
 }
@@ -203,6 +203,14 @@ a {
   position: relative;
   top: -3px;
 }
+
+.header.header.is-sticky .menu li.logo a:focus::after {
+  left: -66px;
+  height: 45px;
+  width: 150px;
+}
+
+
 
 .header.header.is-sticky .flag {
   width: 58px;
@@ -294,10 +302,10 @@ a {
   content: '';
   position: absolute;
   top: 4px;
-  left: 4px;
+  left: -84px;
   outline: 5px auto -webkit-focus-ring-color;
-  height: 65px;
-  width: 195px;
+  height: 60px;
+  width: 193px;
 }
 
 .sidenav {
@@ -358,11 +366,11 @@ a {
 .menu.active li.toggle a:focus::after, .menu li.toggle a:focus::after {
   content: '';
   position: absolute;
-  top: 21px;
-  right: 4px;  
+  top: 22px;
+  right: 6px;  
   outline: 5px auto -webkit-focus-ring-color;
-  height: 30px;
-  width: 30px;
+  height: 29px;
+  width: 29px;
 }
 
 .header.is-sticky a:focus .fa-bars:before, .header.is-sticky a:focus .fa-times:before {
@@ -384,7 +392,7 @@ a {
 
 .fa-times:before {
   position: relative;
-  right: 1px;
+  right: 2.3px;
 }
 
 .menu li a {
@@ -410,12 +418,13 @@ a {
 
 .toggle {
   font-size: 1.25rem;
-  margin-right: 6px;
+  margin-right: 7px;
   margin-left: auto;
 }
 
 .menu .toggle a {
   display: inline-block;
+  font-size: 1.3rem;
 }
 
 .item {
@@ -650,15 +659,20 @@ a {
 
 
   .fa-bars:before, .fa-times:before {
-    /* content: "\f0c9"; */
+    content: "\f0c9";
     top: 13px;
     position: relative;
     right: 4px;
 }
 
-.header.is-sticky a:focus .fa-bars:before, .header.is-sticky a:focus .fa-times:before {
+.header.is-sticky a:focus .fa-bars:before {
   position: relative;
   top: 5px;
+}
+
+.header.is-sticky a:focus .fa-times:before {
+  top: 15px;
+  right: 5px;
 }
 
 .sidenav.active {
@@ -694,7 +708,7 @@ a {
       margin-top: -15px
   }
 
-    .menu.active li.toggle a:focus::after, .menu li.toggle a:focus::after {
+    .menu.active li.toggle a:focus::after {
      top: 17px;
      right: 2px;
   }
@@ -709,10 +723,6 @@ a {
     }
     .logo {
         margin-right: auto;
-    }
-    .toggle {
-        flex: 1;
-        text-align: right;
     }
     .mission p {
       width: 488px;

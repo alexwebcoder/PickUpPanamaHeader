@@ -1,28 +1,6 @@
 const toggle = document.querySelector('.toggle');
 const sidenav = document.querySelector('.sidenav');
-// const openMenu = document.querySelector('.hamburger-icon');
 
-//Toggle mobile menu
-
-// const openNav = () => {
-//   document.querySelector('#mobileMenu').style.width = '250px';
-//   openMenu.innerHTML = `<i class='fas fa-bars'>&#9776;</i>`;
-// }
-
-// const closeNav = () => {
-//   document.querySelector('#mobileMenu').style.width = '0';
-//   openMenu.innerHTML = `<i class='fas fa-times'>&times;</i>`;
-
-// }
-
-
-// openMenu.addEventListener('click', () => {
-//   openNav();
-// });
-
-// closeMenu.addEventListener('click', () => {
-//   closeNav();
-// })
 
 function toggleMenu() {
 
@@ -32,13 +10,11 @@ function toggleMenu() {
     
     //adds the menu (hamburger) icon
     toggle.querySelector('a').innerHTML = `<i class='fas fa-bars'></i>`;
-    // sidenav.style.width = '0';
     
   } else {
     sidenav.classList.add(`active`);
   //adds the close (x) icon
   toggle.querySelector('a').innerHTML = `<i class='fas fa-times'></i>`;
-  // sidenav.style.width = '250px';
   
   }
   
