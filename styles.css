@@ -705,7 +705,7 @@ a {
   }
 
 .sidenav.active {
-  top: 65px;
+  top: 75px;
   width: 115px;
 }
 
@@ -756,6 +756,34 @@ a {
   .definition {
     display: none;
   }
+
+  .hamburger-container {
+    position: relative;
+    top: -55px;
+    right: 3px;
+  }
+
+  .header.header.header.is-sticky .hamburger-container {
+    top: 3px;
+  }
+
+  .header.is-sticky .menu li.toggle a:focus::after {
+    top: 11px;
+ }
+
+ .content {
+  margin-top: 171px;
+}
+}
+
+@media all and (max-width: 171px) {
+  .hamburger-container {
+    top: -23px;
+  }
+
+  .header.header.header.is-sticky .hamburger-container {
+    top: -25px;
+}
 }
 
 /* Tablet menu */
