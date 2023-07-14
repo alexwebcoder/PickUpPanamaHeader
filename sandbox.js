@@ -9,13 +9,9 @@ function toggleMenu() {
   if (sidenav.classList.contains('active')) {
     sidenav.classList.remove('active');
     
-    //adds the menu (hamburger) icon
-    // toggle.querySelector('a').innerHTML = `<i class='fas fa-bars'></i>`;
     
   } else {
     sidenav.classList.add(`active`);
-  //adds the close (x) icon
-  // toggle.querySelector('a').innerHTML = `<i class='fas fa-times'></i>`;
   
   }
   
