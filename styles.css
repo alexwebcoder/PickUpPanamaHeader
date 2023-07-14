@@ -46,6 +46,15 @@ body {
   margin-top: -102px;
 }
 
+.hero-image {
+  height: 500px;
+}
+
+.hero-image {
+  background: url('./images/panama-sign.JPG') no-repeat 31% top;
+  background-size: cover;
+}
+
 .mission p {
   width: 315px;
   font-size: .875rem;
@@ -54,7 +63,7 @@ body {
 
 .hero-image img {
   max-width: 100%;
-  display: block;
+  display: none;
   height: auto;
 }
 
@@ -388,11 +397,6 @@ a {
   top: 11px;
   right: 7px;
 }
-
-/* .header.is-sticky a:focus .fa-bars:before, .header.is-sticky a:focus .fa-times:before {
-  position: relative;
-  top: 5px;
-} */
 
 .header.header.is-sticky .sidenav {
   top: 74px;
@@ -751,6 +755,18 @@ a {
     .mission p {
       width: 488px;
       font-size: 1rem;
+    }
+
+    .hero-image {
+      height: auto;
+    }
+    
+    .hero-image {
+      background: none;
+    }
+    
+    .hero-image img {
+      display: block;
     }
 }
 
