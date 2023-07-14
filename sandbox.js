@@ -1,5 +1,6 @@
 const toggle = document.querySelector('.toggle');
 const sidenav = document.querySelector('.sidenav');
+const hamburger = document.querySelector('.hamburger-container');
 
 
 function toggleMenu() {
@@ -9,19 +10,24 @@ function toggleMenu() {
     sidenav.classList.remove('active');
     
     //adds the menu (hamburger) icon
-    toggle.querySelector('a').innerHTML = `<i class='fas fa-bars'></i>`;
+    // toggle.querySelector('a').innerHTML = `<i class='fas fa-bars'></i>`;
     
   } else {
     sidenav.classList.add(`active`);
   //adds the close (x) icon
-  toggle.querySelector('a').innerHTML = `<i class='fas fa-times'></i>`;
+  // toggle.querySelector('a').innerHTML = `<i class='fas fa-times'></i>`;
   
   }
   
 }
 
+const toggleHamburger = () => {
+  hamburger.classList.toggle('change')
+}
+
 //Event Listener
 
+hamburger.addEventListener('click', toggleHamburger, false)
 toggle.addEventListener('click', toggleMenu, false);
 
 
