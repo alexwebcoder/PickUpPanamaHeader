@@ -133,7 +133,7 @@ a {
 }
 
 .bar1, .bar2, .bar3 {
-  width: 28px;
+  width: 21px;
   height: 3px;
   background-color: #333;
   margin: 5px 0;
@@ -623,7 +623,7 @@ a {
 @media all and (max-width: 285px) {
 
   .header, .header.header.is-sticky {
-      height: 83px;
+      height: 69px;
     }
 
   .definition, .header.is-sticky .definition {
@@ -633,6 +633,7 @@ a {
       background: none;
       padding-right: 25px;
       padding-left: 6px;
+      /* border-bottom: 1px solid #a1a1a1; */
   }
 
   .header.is-sticky .definition {
@@ -646,8 +647,22 @@ a {
 
   .progress-container, .header.header.is-sticky .progress-container {
     position: relative;
-    top: -23px;
+    top: -13px;
     height: 2px;
+  }
+
+  .header.is-sticky .definition p, .definition p {
+    position: relative;
+    top: -3px;
+    white-space: nowrap;
+}
+
+.definition p {
+  top: 5px;
+}
+
+  .header.header.is-sticky .progress-container {
+    top: -23px;
   }
 
   .progress-bar, .header.header.is-sticky .progress-bar {
@@ -690,12 +705,12 @@ a {
   }
 
 .sidenav.active {
-  top: 84px;
+  top: 65px;
   width: 115px;
 }
 
 .header.header.is-sticky .sidenav {
-  top: 71px;
+  top: 69px;
 }
 
 .diamond-text-box .content {
@@ -718,12 +733,12 @@ a {
       white-space: nowrap;
     }
 
-    /* .toggle, .header.header.is-sticky .toggle {
-      margin-top: -57px
-  } */
+    .header.is-sticky .menu li.toggle a:focus::after {
+      right: 13px;
+  }
 
   .menu li.toggle a:focus::after  {
-    top: 14px;
+    top: 7px;
     right: 13px;
     height: 29px;
     width: 34px;
