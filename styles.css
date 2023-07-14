@@ -627,7 +627,7 @@ a {
     }
 
   .definition, .header.is-sticky .definition {
-      font-size: .75rem;
+      font-size: .72rem;
       position: relative;
       top: -23px;
       background: none;
@@ -751,7 +751,7 @@ a {
 
 }
 
-@media all and (max-width: 212px) {
+@media all and (max-width: 195px) {
 
   .definition {
     display: none;
