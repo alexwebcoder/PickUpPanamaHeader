@@ -691,14 +691,14 @@ a {
 
   .menu li.toggle a:focus::after {
     top: 6px;
-    right: 14px;
+    right: 12px;
     height: 31px;
-    width: 32px;
+    width: 30px;
   }
 
   .header.is-sticky .menu li.toggle a:focus::after {
-    top: 8px;
-    right: 14px;
+    top: 7px;
+    right: 12px;
   }
 
   .content {
@@ -734,15 +734,17 @@ a {
       white-space: nowrap;
     }
 
-    .header.is-sticky .menu li.toggle a:focus::after {
-      right: 13px;
-  }
+    /* .header.is-sticky .menu li.toggle a:focus::after {
+      right: 11px;
+      width: 31px;
+      top: 8px;
+  } */
 
-  .menu li.toggle a:focus::after  {
-    top: 7px;
-    right: 13px;
+  .menu li.toggle a:focus::after,  .header.is-sticky .menu li.toggle a:focus::after  {
+    top: 8px;
+    right: 11px;
     height: 29px;
-    width: 34px;
+    width: 31px;
   }
 
     .menu.active li.toggle a:focus::after {
@@ -768,8 +770,13 @@ a {
     top: 3px;
   }
 
-  .header.is-sticky .menu li.toggle a:focus::after {
+  .header.is-sticky .menu li.toggle a:focus::after, .menu li.toggle a:focus::after {
     top: 11px;
+    right: 14px;
+ }
+
+ .menu li.toggle a:focus::after {
+  top: 8px;
  }
 
  .content {
@@ -787,6 +794,13 @@ a {
  .header.header.is-sticky .progress-container {
   top: 11px;
 }
+
+}
+
+@media all and (max-width: 190px) {
+  .hamburger-container, .header.header.header.is-sticky .hamburger-container  {
+    top: -54px;
+  }
 
 }
 
