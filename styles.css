@@ -46,14 +46,14 @@ body {
   margin-top: -102px;
 }
 
-.hero-image {
+/* .hero-image {
   height: 500px;
 }
 
 .hero-image {
   background: url('./images/panama-sign.JPG') no-repeat 31% top;
   background-size: cover;
-}
+} */
 
 .mission p {
   width: 315px;
@@ -63,7 +63,7 @@ body {
 
 .hero-image img {
   max-width: 100%;
-  display: none;
+  display: block;
   height: auto;
 }
 
@@ -331,6 +331,7 @@ a {
   position: absolute;
   top: 4px;
   left: -84px;
+  outline: 5px auto Highlight;
   outline: 5px auto -webkit-focus-ring-color;
   height: 60px;
   width: 193px;
@@ -385,17 +386,17 @@ a {
 .menu.active li.toggle a:focus::after, .menu li.toggle a:focus::after {
   content: '';
   position: absolute;
-  top: 17px;
-  right: 6px;  
+  top: 19px;
+  right: 9px;  
+  outline: 5px auto Highlight;
   outline: 5px auto -webkit-focus-ring-color;
-  height: 39px;
-  width: 45px;
+  height: 33px;
+  width: 33px;
   z-index: -1;
 }
 
 .header.is-sticky .menu li.toggle a:focus::after {
-  top: 11px;
-  right: 7px;
+  top: 12px;
 }
 
 .header.header.is-sticky .sidenav {
@@ -773,7 +774,20 @@ a {
 
  .content {
   margin-top: 171px;
+ }
+
+ .sidenav.active {
+  top: 70px;
+ }
+ 
+ .progress-container {
+  top: 0px;
+ }
+
+ .header.header.is-sticky .progress-container {
+  top: 11px;
 }
+
 }
 
 @media all and (max-width: 171px) {
@@ -800,7 +814,7 @@ a {
       font-size: 1rem;
     }
 
-    .hero-image {
+    /* .hero-image {
       height: auto;
     }
     
@@ -810,7 +824,7 @@ a {
     
     .hero-image img {
       display: block;
-    }
+    } */
 }
 
 /* Desktop menu */
