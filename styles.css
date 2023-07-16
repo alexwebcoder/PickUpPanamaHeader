@@ -386,7 +386,7 @@ a {
 .menu.active li.toggle a:focus::after, .menu li.toggle a:focus::after {
   content: '';
   position: absolute;
-  top: 19px;
+  top: 21px;
   right: 9px;  
   outline: 5px auto Highlight;
   outline: 5px auto -webkit-focus-ring-color;
@@ -396,7 +396,7 @@ a {
 }
 
 .header.is-sticky .menu li.toggle a:focus::after {
-  top: 12px;
+  top: 15px;
 }
 
 .header.header.is-sticky .sidenav {
@@ -805,6 +805,12 @@ a {
   height: 85px;
 }
 
+}
+
+@media all and (max-width: 190px) {
+  .header.header.is-sticky .menu .toggle a {
+    top: -10px;
+  }
 }
 
 /* Tablet menu */

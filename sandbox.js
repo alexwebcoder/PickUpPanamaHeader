@@ -17,18 +17,28 @@ function toggleMenu() {
   
 }
 
-const toggleHamburger = () => {
+const toggleHamburger = (event) => {
+   if (event.keycode === 13 || event.key === 'Enter') {
+    console.log('enter key was pressed')
+    toggleMenu()
   hamburger.classList.toggle('change')
+
+   } else{
+    
+ hamburger.classList.toggle('change')
+ console.log('menu clicked')
+  }
+    
+
 }
 
 //Event Listener
 
+hamburger.addEventListener('keydown', toggleHamburger, false)
 hamburger.addEventListener('click', toggleHamburger, false)
 toggle.addEventListener('click', toggleMenu, false);
 
 
-
-const items = document.querySelectorAll('.item');
 
 //when user scrolls page, this function executes
 
