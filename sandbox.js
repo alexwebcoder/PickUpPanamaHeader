@@ -13,7 +13,7 @@ function toggleMenu() {
   
 }
 
-// changes menu into a cross
+// changes menu into am x
 const toggleHamburgerEnter = (event) => {
    if (event.keycode === 13 || event.key === 'Enter') {
     console.log('enter key was pressed')
@@ -28,8 +28,14 @@ const toggleHamburgerClick = () => {
   console.log('clicked')
 }
 
-//Event Listener
+//Event Listeners
 
+document.addEventListener('keydown', evt => {
+  if (evt.key === 'Escape' && sidenav.classList.contains('active')) {
+      sidenav.classList.remove('active');
+      hamburger.classList.toggle('change')
+  }
+});
 hamburger.addEventListener('keydown', toggleHamburgerEnter, false)
 hamburger.addEventListener('click', toggleHamburgerClick, false)
 toggle.addEventListener('click', toggleMenu, false);
