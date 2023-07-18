@@ -1,41 +1,37 @@
-const toggle = document.querySelector('.toggle');
+const toggle = document.querySelector('.toggle-anchor');
 const sidenav = document.querySelector('.sidenav');
 const hamburger = document.querySelector('.toggle-anchor');
 
-
+//opens the sidenav
 function toggleMenu() {
-
-  
   if (sidenav.classList.contains('active')) {
-    sidenav.classList.remove('active');
-    
+    sidenav.classList.remove('active'); 
     
   } else {
     sidenav.classList.add(`active`);
-  
   }
   
 }
 
-const toggleHamburger = (event) => {
+// changes menu into a cross
+const toggleHamburgerEnter = (event) => {
    if (event.keycode === 13 || event.key === 'Enter') {
     console.log('enter key was pressed')
     toggleMenu()
-  hamburger.classList.toggle('change')
-
-   } else{
-    
- hamburger.classList.toggle('change')
- console.log('menu clicked')
+    hamburger.classList.toggle('change')
   }
-    
 
+}
+
+const toggleHamburgerClick = () => {
+  hamburger.classList.toggle('change')
+  console.log('clicked')
 }
 
 //Event Listener
 
-hamburger.addEventListener('keydown', toggleHamburger, false)
-hamburger.addEventListener('click', toggleHamburger, false)
+hamburger.addEventListener('keydown', toggleHamburgerEnter, false)
+hamburger.addEventListener('click', toggleHamburgerClick, false)
 toggle.addEventListener('click', toggleMenu, false);
 
 
