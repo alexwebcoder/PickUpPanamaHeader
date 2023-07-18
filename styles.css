@@ -130,6 +130,7 @@ a {
   display: inline-block;
   cursor: pointer;
   padding: 10px;
+  outline: 1px solid red;
 }
 
 .bar1, .bar2, .bar3 {
@@ -339,11 +340,11 @@ a {
 
 .sidenav {
   height: auto;
-  display: none;
+  display: flex;
   position: absolute;
   flex-direction: column;
   align-items: center;
-  width: 230px;
+  width: 0;
   z-index: 1;
   top: 92px;
   left: 0;
@@ -354,7 +355,6 @@ a {
 
 .sidenav  li {
   list-style-type: none;
-  border-bottom: 1px solid #a1a1a1;
   width: 100%;
   text-align: center;
 }
@@ -370,6 +370,8 @@ a {
   width: 100%;
   transition: 0.3s;
   color: #FFFFFF;
+  border-bottom: 1px solid #a1a1a1;
+  display: none;
 }
 
 
@@ -377,6 +379,11 @@ a {
   display: flex;
   border-right: 1px solid #a1a1a1;
   border-bottom: 1px solid #a1a1a1;
+  width: 230px;
+}
+
+.sidenav.active a {
+  display: block;
 }
 
 .menu li.logo a:focus { 
@@ -763,11 +770,11 @@ a {
     display: none;
   }
 
-  .toggle-anchor {
+  /* .toggle-anchor {
     position: relative;
     top: -55px;
     right: 3px;
-  }
+  } */
 
 
   .header.is-sticky .menu li.toggle a:focus::after, .menu li.toggle a:focus::after {

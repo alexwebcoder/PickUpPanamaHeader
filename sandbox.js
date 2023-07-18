@@ -1,6 +1,6 @@
 const toggle = document.querySelector('.toggle');
 const sidenav = document.querySelector('.sidenav');
-const hamburger = document.querySelector('.hamburger-container');
+const hamburger = document.querySelector('.toggle-anchor');
 
 
 function toggleMenu() {
