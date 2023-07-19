@@ -79,7 +79,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: #fff;
   margin: auto;
   width: 98%;
   gap: 30px;
@@ -110,7 +110,7 @@ nav {
 }
 
 .definition {
-  background: #FFFFFF;
+  background: #fff;
   padding: 0 0 4px 10px;
   font-size: .875rem;
   font-weight: 500;
@@ -136,7 +136,7 @@ a {
 .bar1, .bar2, .bar3 {
   width: 21px;
   height: 3px;
-  background-color: #333;
+  background-color: #000;
   margin: 5px 0;
   transition: 0.4s;
 }
@@ -225,7 +225,6 @@ a {
   top: 16px;
 }
 
-
 .header.header.is-sticky .logo a {
   font-size: 1.125rem;
   padding-top: 6.5px;
@@ -272,7 +271,7 @@ a {
   overflow: hidden;
   top: 10px;
   left: 10px;
-  border: .15rem solid #1e252c;
+  border: .15rem solid #000;
   transition: background 0.3s;
 }
 
@@ -290,7 +289,7 @@ a {
 .panama-star {
   width: 19px;
   aspect-ratio: 1;
-  /* background-color: white; */
+  background-color: #fff;
   clip-path: polygon(
     50% 0%,
     61% 35%,
@@ -339,7 +338,6 @@ a {
   display: flex;
   position: absolute;
   flex-direction: column;
-  align-items: center;
   width: 0;
   z-index: 1;
   top: 92px;
@@ -352,7 +350,6 @@ a {
 .sidenav  li {
   list-style-type: none;
   width: 100%;
-  text-align: center;
 }
 
 .sidenav a {
@@ -410,7 +407,7 @@ a {
   border-bottom: 1px solid #a1a1a1;
 }
 
-.menu li.toggle a:focus { 
+.menu li.toggle div:focus { 
   outline: 5px auto transparent;
 }
 
@@ -439,10 +436,6 @@ a {
   font-size: 1.25rem;
   margin-right: 0;
   margin-left: auto;
-}
-
-.toggle-anchor {
-  outline: none;
 }
 
 .item {
@@ -507,7 +500,7 @@ a {
 }
 
 .diamond-text-box .right::after {
-  border-left-color: #FFF;
+  border-left-color: #fff;
   border-width: 16px;
   margin-top: -16px;
 }
@@ -573,7 +566,6 @@ a {
 
 .footer {
   width: 100%;
-  text-align: center;
   display: flex;
   flex-direction: column;
   height: auto;
@@ -595,11 +587,11 @@ a {
   padding-bottom: 45px;
 }
 
-.icons a{
+.icons a {
   text-decoration: none;
   font-size: 2rem;
   margin: 0.5rem;
-  color: black;
+  color: #000;
 }
 
 /* small resolution media queries */
