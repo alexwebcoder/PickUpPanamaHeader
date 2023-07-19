@@ -340,7 +340,7 @@ a {
   flex-direction: column;
   width: 0;
   z-index: 1;
-  top: 92px;
+  top: 91px;
   left: 0;
   background-color:  #132257;
   overflow-x: hidden;
@@ -353,7 +353,7 @@ a {
 }
 
 .sidenav a {
-  padding: 8px;
+  padding: 11px;
   text-decoration: none;
   font-size: .875rem;
   font-weight: 500;
@@ -363,6 +363,7 @@ a {
   width: 100%;
   transition: 0.3s;
   color: #fff;
+  position: relative;
   border-bottom: 1px solid #a1a1a1;
   visibility: hidden;
 }
@@ -377,6 +378,23 @@ a {
 
 .sidenav.active a {
   visibility: visible;
+}
+
+.sidenav.active li a:focus { 
+  outline: none;
+}
+
+.sidenav.active li a:focus::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 0;;
+  right: 0;  
+  outline: 5px auto Highlight;
+  outline: 5px auto -webkit-focus-ring-color;
+  height: 22px;
+  width: 74px;
+  margin: auto;
 }
 
 .menu li.logo a:focus { 
