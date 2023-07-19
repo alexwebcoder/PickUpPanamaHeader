@@ -396,7 +396,7 @@ a {
 }
 
 .header.is-sticky .menu li.toggle div.toggle-anchor:focus::after {
-  top: 15px;
+  top: 13px;
 }
 
 .header.header.is-sticky .sidenav {
@@ -675,6 +675,12 @@ a {
     font-size: 1rem;
   }
 
+  .menu li.logo a:focus::after {
+    left: -54px;
+    height: 43px;
+    width: 130px;
+  }
+
   .menu li.toggle div.toggle-anchor:focus::after {
     top: 6px;
     right: 7px;
@@ -766,12 +772,18 @@ a {
 @media all and (max-width: 185px) {
 
   .header.is-sticky .menu li.toggle div.toggle-anchor:focus::after {
-    top: 12px;
+    top: 10px;
+    right: 5px;
+  }
+
+  .menu li.toggle div.toggle-anchor:focus::after {
+    top: 11px;
+    right: 5px;
   }
 
   .toggle-anchor {
     position: relative;
-    top: -15px;
+    top: -12px;
   }
 
   .header.is-sticky .toggle-anchor {

@@ -15,7 +15,7 @@ function toggleMenu() {
 
 // changes menu into am x
 const toggleHamburgerEnter = (event) => {
-   if (event.keycode === 13 || event.key === 'Enter') {
+   if (event.keycode === 13 || event.key === 'Enter' || event.keycode === 32 || event.code === 'Space')  {
     console.log('enter key was pressed')
     toggleMenu()
     hamburger.classList.toggle('change')
