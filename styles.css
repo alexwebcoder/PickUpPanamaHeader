@@ -81,7 +81,7 @@ body {
   justify-content: center;
   background-color: #fff;
   margin: auto;
-  width: 98%;
+  width: 60%;
   gap: 30px;
   padding: 0 15px;
 }
@@ -577,8 +577,7 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  /* padding: 40px 25px; */
-  /* gap: 28px; */
+  padding: 40px 25px;
 }
 
 .footer {
@@ -838,7 +837,7 @@ a {
 } */
 
 .featured-content-container {
-  width: 80%;
+  width: 60%;
   margin: auto;
 }
 
