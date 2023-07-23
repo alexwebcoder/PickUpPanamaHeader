@@ -77,7 +77,6 @@ body {
 
 .card-container {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -595,7 +594,7 @@ a {
 
 .diamond-text-box .left:before, .diamond-text-box .left::after {
   content: " ";
-  top: 50%;
+  top: 52%;
   border: solid transparent;
   height: 0;
   width: 0;
@@ -615,7 +614,7 @@ a {
 
 .diamond-text-box .right:before, .diamond-text-box .right::after {
   content: " ";
-  top: 50%;
+  top: 52%;
   border: solid transparent;
   height: 0;
   width: 0;
