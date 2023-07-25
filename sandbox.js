@@ -70,3 +70,11 @@ window.addEventListener('scroll', ()=> {
 
 });
 
+
+var lastElement = document.activeElement;
+setInterval(function() {
+  if (lastElement != document.activeElement) {
+    lastElement = document.activeElement;
+    console.log(document.activeElement);
+  }
+}, 100);

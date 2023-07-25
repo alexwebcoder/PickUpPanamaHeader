@@ -72,6 +72,10 @@ body {
   border-radius: 10px;
 }
 
+.hero-image figure {
+  border-radius: 0;
+}
+
 .card-container {
   width: 95%;
   display: flex;
@@ -87,7 +91,7 @@ body {
 }
 
 .blog-article-content {
-  padding: 10px;
+  padding: 10px 10px 0 10px;
 }
 
 .card-img img, .feature-anchor img {
@@ -159,7 +163,7 @@ a {
 /* psudo-element to make the flag clickable */
 
 .logo a::before {
-  content: '';
+  content: "";
   top: 7px;
   left: -81px;
   right: 0;
@@ -323,7 +327,7 @@ a {
 
 /* pseudo-element for logo to focus over flag */
 .menu li.logo a:focus::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 4px;
   left: -84px;
@@ -385,7 +389,7 @@ a {
 }
 
 .sidenav.active li a:focus::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 9px;
   left: 0;;
@@ -398,11 +402,11 @@ a {
 }
 
 .menu li.logo a:focus { 
-  outline: 5px auto transparent;
+  outline: none;
 }
 
  .menu li.toggle div.toggle-anchor:focus::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   right: 4px;  
@@ -426,7 +430,7 @@ a {
 }
 
 .menu li.toggle div:focus { 
-  outline: 5px auto transparent;
+  outline: none;
 }
 
 .menu li a {
@@ -463,17 +467,17 @@ a {
 
 .line-divider {
   position: relative;
-  margin: 0;
+  margin: 35px 0 35px
 }
 
 .line-divider.wide:before {
-  content: " ";
+  content: "";
   height: 1px;
   width: 80%;
   left: 10%;
   display: block;
   position: absolute;
-  top: 50%;
+  top: 52%;
   margin-top: -1px;
   background-color: #a1a1a1;
 }
@@ -484,7 +488,7 @@ a {
 }
 
 .diamond-text-box .left:before, .diamond-text-box .left::after {
-  content: " ";
+  content: "";
   top: 52%;
   border: solid transparent;
   height: 0;
@@ -504,7 +508,7 @@ a {
 }
 
 .diamond-text-box .right:before, .diamond-text-box .right::after {
-  content: " ";
+  content: "";
   top: 52%;
   border: solid transparent;
   height: 0;
@@ -540,8 +544,8 @@ a {
 .featured-content-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 25px 10px; 
+  margin: auto;
+  width: 95%;
 }
 
 .feature-photo-container {
@@ -561,7 +565,6 @@ a {
   flex-direction: column;
   }
   
-
 .featured-article {
   display: flex;
   flex-direction: column;
