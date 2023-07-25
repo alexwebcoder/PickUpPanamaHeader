@@ -69,7 +69,7 @@ body {
  figure {
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .hero-image figure {
@@ -91,7 +91,7 @@ body {
 }
 
 .blog-article-content {
-  padding: 10px 10px 0 10px;
+  padding: 10px;
 }
 
 .card-img img, .feature-anchor img {
@@ -106,8 +106,8 @@ body {
 }
 
 .card-container article {
-  margin-bottom: 25px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 35px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 nav {
@@ -547,6 +547,7 @@ a {
   flex-direction: column;
   margin: auto;
   width: 95%;
+  
 }
 
 .feature-photo-container {
@@ -562,6 +563,7 @@ a {
 
 .feature-anchor .feature-wrapper {
   transition: 1s ease;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   flex-direction: column;
   }
