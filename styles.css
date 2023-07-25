@@ -803,11 +803,6 @@ a {
 /* Tablet menu */
 @media all and (min-width: 700px) {
 
-  .line-divider {
-    margin: 35px 0 35px;
-
-  }
-
     .menu {
         justify-content: center;
     }
@@ -833,11 +828,21 @@ a {
   
   .card-container {
     flex-direction: row;
+    flex-wrap: wrap;
     width: 80%;
+    margin-bottom: 35px;
   }
 
   .card-container article {
     margin-right: 25px;
+    margin-bottom: 0;
+    width: calc(80% / 3)
+    
+  }
+
+  .card-container article:nth-of-type(2) {
+    position: relative;
+    top: 16px;
   }
 
   .card-container article:last-child {
@@ -888,6 +893,14 @@ a {
 
 }
 
+
+@media all and (min-width: 1460px) {
+  .card-container article:nth-of-type(2) {
+    position: relative;
+    top: 0px;
+}
+
+}
 
 
 
