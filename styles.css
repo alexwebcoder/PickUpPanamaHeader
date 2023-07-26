@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
+}news
 
 html {
   height: 100vh;
@@ -609,7 +609,7 @@ a {
 }
 
 .news {
-  margin: 125px auto;
+  margin: 193px auto;
   position: relative;
 }
 
