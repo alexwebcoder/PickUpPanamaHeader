@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}news
+}
 
 html {
   height: 100vh;
@@ -50,8 +50,8 @@ body {
 .mission h1 {
   font-size: 1.5rem;
   margin-bottom: 13px;
-  letter-spacing: .01em;
-  font-weight: 400;
+  letter-spacing: .02em;
+  font-weight: 900;
 }
 
 .mission p {
@@ -913,6 +913,10 @@ a {
 
   .sidenav.active {
     display: none;
+  }
+
+  .mission h1 {
+    font-size: 2rem;
   }
 
 }
