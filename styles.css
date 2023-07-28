@@ -769,11 +769,14 @@ a {
 }
 
 @media all and (max-width: 230px) {
-  .home-content {
-    margin-top: 181px;
-}
+    .home-content {
+      margin-top: 181px;
+  }
 
-
+  .mission h1 {
+    font-size: 1.4rem;
+    white-space: nowrap;
+  }
 }
 
 @media all and (max-width: 195px) {
