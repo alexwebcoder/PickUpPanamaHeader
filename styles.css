@@ -41,7 +41,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 242px;
-  border-top: 1px solid #a1a1a1;
+  border-top: 1px solid transparent;
   background-color: #fff;
   font-weight: 500;
   margin-top: -102px;
@@ -121,6 +121,7 @@ nav {
   font-size: .875rem;
   font-weight: 500;
   letter-spacing: .09rem;
+  border-bottom: 1px solid #a1a1a1;
 }
 
 .definition span {
@@ -649,14 +650,17 @@ a {
   .definition, .header.is-sticky .definition {
       font-size: .72rem;
       position: relative;
-      top: -23px;
-      background: none;
+      top: -20px;
+      /* background: none; */
       padding-right: 25px;
       padding-left: 6px;
+      padding-bottom: 9px;
+      z-index: -1;
   }
 
   .header.is-sticky .definition {
     padding-top: 18px;
+    top: -23px;
   }
 
   .toggle, .header.header.is-sticky .toggle {
@@ -664,20 +668,21 @@ a {
     margin-right: 1px;
   }
 
-  .progress-container, .header.header.is-sticky .progress-container {
+  .progress-container {
     position: relative;
-    top: -13px;
+    top: -20px;
     height: 2px;
   }
 
-  .header.is-sticky .definition p, .definition p {
+  .header.is-sticky .definition p {
     position: relative;
-    top: -3px;
+    top: 0;
     white-space: nowrap;
 }
 
 .definition p {
-  top: 5px;
+  top: 3px;
+  position: relative;
 }
 
   .header.header.is-sticky .progress-container {
@@ -760,6 +765,14 @@ a {
     right: 6px;
     top: 7px;
   }
+
+}
+
+@media all and (max-width: 230px) {
+  .home-content {
+    margin-top: 181px;
+}
+
 
 }
 
