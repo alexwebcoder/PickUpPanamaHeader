@@ -55,6 +55,24 @@ const myFunction = () => {
   document.getElementById('myBar').style.width = scrolled + '%';
 }
 
+const navLinks = document.querySelectorAll('.item');
+
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+    document.querySelector('.disabled')?.classList.remove('disabled');
+    navLink.classList.add('disabled');
+  })
+})
+
+const sideNavLinks = document.querySelectorAll('.sidenav li');
+
+sideNavLinks.forEach(sideNavLink => {
+   sideNavLink.addEventListener('click', () => {
+    document.querySelector('.disabled')?.classList.remove('disabled');
+    sideNavLink.classList.add('disabled');
+  })
+})
+
 // for the sticky header animation
 
 const header = document.querySelector('.header');
@@ -69,12 +87,3 @@ window.addEventListener('scroll', ()=> {
      }
 
 });
-
-
-var lastElement = document.activeElement;
-setInterval(function() {
-  if (lastElement != document.activeElement) {
-    lastElement = document.activeElement;
-    console.log(document.activeElement);
-  }
-}, 100);

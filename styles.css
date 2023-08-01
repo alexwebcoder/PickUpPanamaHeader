@@ -18,6 +18,21 @@ body {
   flex-direction: column;
 }
 
+.disabled a {
+  pointer-events: none;
+  cursor: pointer;
+  color:#888;
+}
+
+.sidenav .disabled {
+  background-color: #ccc;
+}
+
+.item.disabled:hover:after {
+  transform-origin: bottom left;   
+  transform: scaleX(0);
+}
+
 .caps {
   text-transform: uppercase;
 }
@@ -137,7 +152,6 @@ a {
   display: inline-block;
   cursor: pointer;
   padding: 10px;
-  outline: 1px solid red;
 }
 
 .bar1, .bar2, .bar3 {
